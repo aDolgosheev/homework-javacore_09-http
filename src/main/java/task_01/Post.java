@@ -8,7 +8,7 @@ public class Post {
     private final String text;
     private final String type;
     private final String user;
-    private final String upvotes;
+    private final Integer upvotes;
 
 
     public Post(
@@ -16,7 +16,7 @@ public class Post {
             @JsonProperty("text") String text,
             @JsonProperty("type") String type,
             @JsonProperty("user") String user,
-            @JsonProperty("upvotes") String upvotes
+            @JsonProperty("upvotes") Integer upvotes
     ) {
         this.id = id;
         this.text = text;
@@ -25,7 +25,7 @@ public class Post {
         this.upvotes = upvotes;
     }
 
-    public String getUpvotes() {
+    public Integer getUpvotes() {
         return upvotes;
     }
 

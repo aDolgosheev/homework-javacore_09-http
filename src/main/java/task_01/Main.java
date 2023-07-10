@@ -50,7 +50,7 @@ public class Main {
                 new TypeReference<>() {
                 }
         );
-        posts.stream().filter(value -> value.getUpvotes() != null && Integer.parseInt(value.getUpvotes()) > 0).forEach(System.out::println);
+        posts.stream().filter(value -> value.getUpvotes() != null && value.getUpvotes() > 0).forEach(System.out::println);
 //        posts.forEach(System.out::println);
 
         response.close();
